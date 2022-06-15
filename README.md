@@ -1,4 +1,4 @@
-# ArchiwizatorNut
+# Archiwizator Nut
 <p align="left"><i>Autor: Jakub Kaniowski</i></p>
 </hr>
 
