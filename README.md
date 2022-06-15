@@ -9,7 +9,7 @@
 
 <hr/>
 ><b>Opis projektu:</b></br>
-><br>
+<br>
 <i>Projekt zakłada stworzenie aplikacji internetowej umożliwiającej stworzenie bazy utworów zawierającej podział względem przynależności określonych nut
 do stworzonego w danym momencie "klasera nutowego". Główną funkcją systemu, powinna być funkcja wyszukiwania nut po tytule, autorze lub zawartości danego klasera.
 Ponadto dodano możliwość skanowania QR-Code generowanego w momencie tworzenia nowego klasera. Dzięki temu, możliwa jest aktualizacja spisu utworów, bez konieczności druku nowych okładek.
