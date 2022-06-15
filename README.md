@@ -1,7 +1,7 @@
 # Archiwizator Nut
 <p align="left"><i>Autor: Jakub Kaniowski</i></p>
 </hr>
-
+</hr>
 
 <p align="center">
   <img src="/Obrazy/View/1.jpg" width="786" title="Zbudowana platforma mobilna">
