@@ -1,0 +1,862 @@
+﻿/*ARKUSZ STYLÓW CSS Strona Internetowa*/
+
+/*Kolory: #201f25; (czarny) | #f2e6b5; <- Sekcja Zawartości*/
+/*#545042;  <-- Navi*/
+/*#07bf2c; <-- Nagłówek*/
+/*#54195b; <--wstawki*/
+/*#bfc0c2; <-- dekory, obramówki*/
+/*#023403; <-- stopka*/
+/*====================================*/
+div#top_10
+{
+    display: none;
+}
+@font-face {
+   font-family: czcionka;
+   src: url(../Oxygen-Bold.ttf);
+}
+
+html
+{
+    background-image: url("../tlo2.png");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Calibri;
+    text-align: justify;
+}
+body
+{
+    width: 1024px;
+    margin: 0px auto;
+    margin-top: 10px;
+    background-color: #f2e6b5;
+    box-shadow: 0px 0px 5px black;  
+    height: auto;
+}
+
+div#naglowek
+{
+    display:inline-block;
+    margin: 0px auto;
+    margin-bottom: 6px;
+    width: 100%;
+    height: 110px;
+    background-color: #07bf2c; 
+    text-align: center; 
+}
+
+a#logo
+{
+    display:block;
+    margin-top:20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'czcionka';
+    font-size: 32px;
+    transition-duration: 0.25s;
+}
+
+a#logo:hover
+{
+    color: #545042; 
+}
+
+div#menu
+{
+    margin-top: 20px;
+    display:block;
+    bottom:0px;
+    width: 100%;
+    height: 35px;
+    background-color: #545042; 
+    border-bottom: 1px solid  #3A382E;  
+}
+
+div#menu > ul > li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 0px;
+    border: none;
+    transition-duration: 0.4s;
+}
+
+div#menu > ul > li:hover
+{
+    border-bottom: 2px solid #07bf2c;
+}
+
+
+a.navi
+{
+    display: block;
+    padding: 5px 15px 5px 15px;
+    text-decoration: none;
+    color: white;
+    font-family: Calibri;
+    font-size: 20px;
+    transition-duration: 0.45s;
+}
+
+a.navi:hover
+{
+    color: #35FF0C; 
+    padding: 5px 15px 5px 15px; 
+    background-color: #3A382E;
+}
+
+div#zawartosc
+{
+    display: inline-block;
+    width:100%;
+    height: auto;
+    background-color: #E5FFED;
+}
+
+div.lewy-box
+{
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    float: left;
+    width: 46%;
+    overflow: auto;
+    min-height: 45%;
+    max-height: 46%;
+    text-align: center;
+}
+
+div.prawy-box
+{
+    display: block;
+    padding: 10px 20px 10px 20px;
+    float: right;
+    width: 46%;
+    overflow: auto;
+    min-height: 45%;
+    max-height: 46%;
+}
+
+div.trzeci-box
+{
+    display: block;
+    clear: both;
+    padding: 10px 20px 10px 20px;
+    overflow: hidden;
+    max-height: 50%;
+    overflow: auto;
+}
+
+h2.temat
+{
+    color: #07bf2c;
+    border-bottom: 1px solid #bfc0c2;
+    text-align: left;
+}
+
+h4.info_h4
+{
+    text-align: center;
+    color: #bfc0c2;
+    margin: 11px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+table.tabelka
+{
+    margin: 0px auto;
+    padding: 10px;
+    
+}
+
+tr.tabelka-tr
+{
+    padding: 10px;
+    border:  1px solid black;
+}
+
+td.tabelka-td
+{
+    padding: 3px 5px 3px 5px;
+    border:  1px solid #bfc0c2;
+}
+
+img
+{
+    width:450px;
+    height:300px;
+    box-shadow: 1px 1px 5px black;
+    -webkit-box-shadow:1px 1px 5px black;
+    -moz-box-shadow: 1px 1px 5px black;
+    margin: 0px auto; 
+}
+
+a.linki
+{
+    text-decoration: none;
+    font-size: 15px;
+    color: #545042;
+}
+
+a.linki:hover
+{
+    color: red;
+    font-weight: 700;
+}
+
+
+div.bibliografia
+{
+    display: block;
+    margin: 0px auto;
+    padding: 15px;
+    font-size: 15px;
+    border:  1px solid #bfc0c2;
+    background-color: #A0FFC8;
+    width: 786px;
+}
+
+div#stopka
+{
+    display: block;
+    text-align: center;
+    padding: 5px;
+    background-color: #545042;
+}
+
+/*Tabela formularzowa  */
+
+table.tabelka_form
+{
+    margin: 0px auto;
+    padding: 10px;    
+}
+
+tr.tabelka-tr_form
+{
+    padding: 10px;
+    border:  none;
+}
+
+td.tabelka-td_form_1
+{
+    
+    
+}
+
+td.tabelka-td_form_2
+{
+    padding: 3px 5px 3px 5px;
+    border:  none;
+    width: 350px;
+}
+
+input.dodaj_utw_form
+{
+    width: 400px;
+    display:  block;
+    font-size: 18px;
+    text-align: center;
+    padding: 4px;
+    border: 1px solid #bfc0c2;
+    color:green;
+    margin:  0px auto;
+}
+
+input.dodaj_utw_form:checked
+{
+    border:  1px solid #30badf;
+}
+
+input.dodaj_utw_form::-webkit-input-placeholder{color: green;}
+
+input.dodaj_utw_form::-moz-placeholder{color: green;}
+
+input.dodaj_utw_form::-ms-input-placeholder{color: green;}
+
+.wyslij_utw_form
+{
+    width: 110px;
+    height: 110px;
+    display:  inline-block;
+    font-size: 18px;
+    text-align: center;
+    padding: 1px;
+    border: none;
+    color:#E5FFED;
+    margin: 10px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    transition-duration: 0.45s;
+}
+
+.wyslij_utw_form_numer
+{
+    width: 110px;
+    height: 110px;
+    display:  inline-block;
+    font-family: Calibri;
+    font-size: 18px;
+    text-align: center;
+    padding: 1px;
+    border: none;
+    background-color: #30badf;
+    color: #3A382E;
+    margin: 10px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    transition-duration: 0.45s;
+}
+
+
+.wyslij_utw_form:hover
+{
+    width: 110px;
+    height: 110px;
+    background-color: #07bf2c;
+    display:  inline-block;
+    font-size: 18px;
+    text-align: center;
+    padding: 1px;
+    border: none;
+    color: #d2f34a;
+    margin:  10px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0px 0px 5px black; 
+}
+
+img#klucz_png
+{
+    width: 65px;
+    height: 130px;
+    box-shadow: none;
+    
+}
+
+div.centra-obiekt
+{
+    display: inline-flex;
+    padding: 8px;
+    width: auto;
+    margin-left: 7%;
+    margin-right: 5%;
+}
+
+label {
+    font-family: Calibri, Helvetica, sans-serif;
+    display: inline-block;  
+    cursor: pointer;  
+    text-shadow: 0 0 1px #fff, 0 0 1px rgba(0,0,0,0.6);
+    position: relative;  
+    padding-left: 30px;  
+    margin-right: 10px;  
+    font-size: 0.9em;  
+    
+  }
+
+input[type=radio]
+{
+    display: none;
+    margin-right: 5px;
+} 
+
+label:before {  
+    content: "";  
+    display: inline-block;  
+    width: 17px;  
+    height: 17px;  
+    border-radius: 8.5px; 
+    margin-right: 10px;  
+    position: absolute;  
+    left: 5px;   
+    background-color: #E5FFED;
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, .7), 0px 0px 2px rgba(255, 255, 255, .8);  
+}
+
+input[type=radio]:checked + label:before {  
+    content: "";  
+    color: #07bf2c;  
+    font-size: 30px;  
+    text-align: center;  
+    line-height: 15px;  
+    background-color: #07bf2c;
+}
+label:checked {
+    color: #30badf;
+}
+
+
+/*Popup*/
+
+div.alert-okno {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:10000;
+    display:none; 
+}
+ 
+div.alert-okno .bg {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1;
+    background-color: #30badf;
+    opacity: 0.7;
+}
+ 
+div.alert-okno .kontener {
+    width:500px;
+    height:450px;
+    position:absolute;
+    z-index:2;
+    top:15%;
+    left:50%;
+    right:50%;
+    margin-top:-170px; 
+    margin-left:-200px; 
+    background-color:#fff;
+    -moz-box-shadow:0 0 50px #000;
+    -webkit-box-shadow:0 0 50px #000;
+    box-shadow:0 0 50px #000;
+    
+}
+ /*
+div.alert-okno .zamknij {
+    width:13px;
+    height:13px;
+    display:block;
+    border:0;
+    cursor:pointer;
+    position:absolute;
+    top:10px;
+    right:10px;
+    text-indent: -999em;
+    overflow:hidden;
+    background-image: url(../Zdjecia/zamknij.png)
+    
+}
+ */
+div.alert-okno .content-okno {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    font:12px czcionka;
+    color:#1FD969;
+    overflow:auto;
+    margin-bottom: -50px;
+}
+
+div.content-okno-2
+{
+    margin:15px 15px 15px 15px;
+    color: red;
+    font-size: 14px;
+    width: 100%;
+}
+/*Wyglad podgladu bazy*/
+div.utwor
+{
+    display: block;
+    color: #545042;
+    padding: 10px;
+    width: auto;
+    border-left: 1px solid #bfc0c2;
+    border-right: 1px solid #bfc0c2;
+    font-family: czcionka;
+    margin: 0px 3px 0px 3px;
+}
+
+p.statystyka
+{
+    color: #07bf2c;
+    border-bottom: 1px solid #bfc0c2;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    margin: 5px 25px 10px 25px;
+    
+}
+
+p.statystyka_podtemat
+{
+    color: #07bf2c;
+    border-bottom: 1px solid #bfc0c2;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    margin: 2px 25px 10px 45px;
+    
+}
+
+p.statystyka_podtemat:hover
+{
+    color: #21ad3d;
+    border-bottom: 1px solid #a8a5a5;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    margin: 2px 25px 10px 45px;
+    
+}
+
+.tabela_utworow
+{
+    background-color: white;
+    border-collapse: collapse;
+    -moz-box-shadow:0 0 5px #f2e6b5;
+    -webkit-box-shadow:0 0 5px #f2e6b5;
+    box-shadow:0 0 5px #f2e6b5;
+    margin: 0px auto;
+    overflow: scroll;
+}
+
+.tabela_utworow tr#inne_tr
+{
+    color: #07bf2c;
+    padding: 6px;
+    text-align: center; 
+    background-color: #545042; 
+    font-family: czcionka;
+    font-size: 16px;
+    border: none;
+    
+}
+
+.tabela_utworow tr#inne_tr > th{ padding: 10px; border:  1px solid #3A382E;  }
+
+
+.tabela_utworow  tr
+{
+    color: #07bf2c;
+    padding: 3px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    font-size: 17px;
+    transition-duration: 0.35s;
+}
+
+.tabela_utworow  tr:hover
+{
+    color: #30badf;
+    padding: 5px;
+    background-color: #f0ffe3;
+    
+    
+}
+
+.tabela_utworow, td
+{
+    border:  1px solid #bfc0c2;
+    padding: 4px 6px 4px 6px;
+    cursor: default;
+}
+
+
+a.wyloguj
+{
+    text-decoration: none;
+    text-align: left;
+    margin-right: 20px;
+    color: #bfc0c2;
+    font-size: 12px;
+    transition-duration: 0.35s;
+}
+
+a.wyloguj:hover
+{
+    text-decoration: none;
+    text-align: left;
+    margin-right: 20px;
+    color: #e35656;
+    font-size: 12px;
+}
+
+
+a.przekierowanie
+{
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+    color: #7873e8;
+    font-size: 16px;
+    transition-duration: 0.35s;
+}
+
+a.przekierowanie:hover
+{
+    color: #07bf2c;
+    font-size: 16px;
+}
+
+
+#link_profil
+{
+    text-decoration: none;
+    color: #30badf;
+}
+
+#link_profil:hover
+{
+    text-decoration: underline;
+    color: #30badf;
+}
+
+div.wynik_wyszukiwania {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:10000;
+    display:none; 
+    font-family: Calibri;
+    font-size: 17px;
+    text-align: center;
+}
+ 
+div.wynik_wyszukiwania .bg {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1;
+    background-color: #453737;
+    opacity: 0.7;
+}
+
+div.wynik_wyszukiwania .kontener {
+    width:500px;
+    min-height:450px;
+    max-height: 550px;
+    position:absolute;
+    z-index:2;
+    top:25%;
+    left:50%;
+    right:50%;
+    margin-top:-150px; 
+    margin-left:-200px; 
+    background-color:#E5FFED;
+    -moz-box-shadow:0 0 50px #000;
+    -webkit-box-shadow:0 0 50px #000;
+    box-shadow:0 0 50px #000;
+    
+}
+
+div.wynik_wyszukiwania .content-okno {
+    margin: 0px;
+    width: 100%;
+    height: 550px;
+    font:12px czcionka;
+    color:#1FD969;
+    overflow: auto;
+    
+}
+
+div.content-okno-2
+{
+    margin:0px;
+    color: #d59c15;
+    font-size: 14px;
+}
+
+div.zamknij
+{
+    clear:both;
+    display:block;
+    position:absolute;
+    bottom:0px;
+    width: 100%;
+    background-color: #545042;
+    color: white;
+    text-decoration:none;
+    font-family: czcionka;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    cursor:pointer;
+    transition-duration: 0.4s;
+}
+
+div.zamknij > a
+{
+    text-decoration: none;
+    color: inherit;
+
+}
+
+
+div.zamknij:hover
+{
+    clear:both;
+    display:block;
+    position:absolute;
+    bottom:0px;
+    width: 100%;
+    background-color: #07bf2c;
+    text-decoration:none;
+    font-family: czcionka;
+    font-size: 16px;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    color:  #07bf2c;
+    background-color: #434342;
+}
+
+img.informacje_web /*Zdjecie z technologią na Informacje.html*/
+{
+    box-shadow: none;
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    opacity: 0.755;
+    transition-duration: 0.25s;
+}
+
+img.informacje_web:hover /*Zdjecie z technologią na Informacje.html*/
+{
+    opacity: 1;    
+}
+
+/*Powiadomienia o próbie*/
+
+p.kiedy_proba
+{
+	font-size: 50px; color: #30badf; text-align: center; display: block; font-family: czcionka;
+	transition-duration: 0.25s;
+
+}
+
+p.kiedy_proba:hover
+{
+	color: #07bf2c; 
+
+}
+
+p.kiedy_proba_godzina
+{
+	font-size: 42px;  text-align: center; display: block; font-family: czcionka;
+	transition-duration: 0.25s; color: #07bf2c; 
+
+}
+
+p.kiedy_proba_godzina:hover
+{
+	color: #30badf;
+
+}
+
+p.kiedy_proba_gdzie
+{
+	font-size: 30px; color: #30badf; text-align: center; display: block; font-family: czcionka;
+	transition-duration: 0.25s;
+
+}
+
+p.kiedy_proba_gdzie:hover
+{
+	color: #07bf2c; 
+
+}
+
+/*Odnosnik do spisu bezposredniego kazdej ksiazki*/
+a.spis_ksiazki
+{
+    text-decoration:none;
+}
+
+/*Obrazek generowany do spisu tresci ksiazek*/
+
+div#obraz_ksiazka
+{
+    display: inline-block;
+    width: 230px;
+    height: 310px;
+    background-color: #E5FFED;
+    box-shadow: 0px 0px 5px black;
+    margin-top: 7px;
+    margin-left: 175px;
+    float: left;   
+
+    background-image: url("../Obrazy/yamaha1.jpg");
+    background-attachment: local;
+    background-size: cover; 
+    background-position: -70px;
+}
+
+div#wykaz
+{
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: -40px;
+
+}
+p#skr_tyt
+{
+    text-align: left; 
+    display: inline-block;
+    padding-top: 225px;
+    font-size-adjust: 0.60;
+    font-family: 'czcionka';
+    color: #e4a636;
+    font-size: 20px;
+    margin: 0px auto;
+    padding-left: 10px;
+}
+p#skr_rok
+{
+    padding-top: 5px;
+    padding-left: 10px;
+    text-align: left; 
+    color: #9a9a9c;
+    font-family: 'czcionka';
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0px auto;
+}
+p#skr_user
+{
+    padding-top: 0px;
+    padding-right: 10px;
+    color: #9398a1;
+    text-align: right; 
+    font-family: 'czcionka';
+    font-size: 8px;
+    margin: 0px auto;
+}
+p.wykaz_p
+{
+    font-family: 'Microsoft Sans Serif';
+    font-size: 15px;
+    border-bottom: 1px solid #bfc0c2;
+    width: 400px;
+}
+
+span.wykaz_span
+{
+    float: right;
+}
+span.licznik
+{
+    display: inline-block;;
+    font-family: 'czcionka';
+    font-size: 11px;
+    text-align: center;
+    width: 20px;
+    height: 10px;
+    padding-top: 4px;
+    padding-bottom: 6px;
+    margin-right: 8px;
+    background-color: #ebb32d;
+    color: white;
+}

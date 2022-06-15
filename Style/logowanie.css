@@ -1,0 +1,532 @@
+﻿/*ARKUSZ STYLÓW CSS Strona Internetowa*/
+
+/*Kolory: #201f25; (czarny) | #f2e6b5; <- Sekcja Zawartości*/
+/*#545042;  <-- Navi*/
+/*#07bf2c; <-- Nagłówek*/
+/*#54195b; <--wstawki*/
+/*#bfc0c2; <-- dekory, obramówki*/
+/*#023403; <-- stopka*/
+/*====================================*/
+
+@font-face {
+   font-family: czcionka;
+   src: url(../Oxygen-Bold.ttf);
+}
+
+html
+{
+    background-image: url("../tlo2.png");
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Calibri;
+    text-align: justify;
+}
+body
+{
+    width: 1024px;
+    margin: 0px auto;
+    margin-top: 10px;
+    background-color: #f2e6b5;
+    box-shadow: 0px 0px 5px black;  
+    height: auto;
+}
+
+div#naglowek
+{
+    display:inline-block;
+    margin: 0px auto;
+    margin-bottom: 6px;
+    width: 100%;
+    height: 110px;
+    background-color: #07bf2c; 
+    text-align: center; 
+}
+
+a#logo
+{
+    display:block;
+    margin-top:20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'czcionka';
+    font-size: 32px;
+    transition-duration: 0.25s;
+}
+
+a#logo:hover
+{
+    color: #545042; 
+}
+
+div#menu
+{
+    margin-top: 20px;
+    display:block;
+    bottom:0px;
+    width: 100%;
+    height: 35px;
+    padding-top: 1px;
+    background-color: #545042; 
+    border-bottom: 1px solid  #3A382E;  
+}
+
+div#menu > ul > li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 0px;
+    border: none;
+    transition-duration: 0.4s;
+}
+
+div#menu > ul > li:hover
+{
+    border-bottom: 2px solid #07bf2c;
+}
+
+
+a.navi
+{
+    display: block;
+    padding: 5px 15px 5px 15px;
+    text-decoration: none;
+    color: white;
+    font-family: Calibri;
+    font-size: 20px;
+    transition-duration: 0.45s;
+}
+
+a.navi:hover
+{
+    color: #35FF0C; 
+    padding: 5px 15px 5px 15px; 
+    background-color: #3A382E;
+}
+
+div#zawartosc
+{
+    display: block;
+    width:100%;
+    height: 400px;
+    background-color: #E5FFED;
+    padding:50px 0px 50px 0px;
+}
+
+div.lewy-box
+{
+    display: block;
+    padding: 10px 20px 10px 20px;
+    float: left;
+    width: 46%;
+    overflow: auto;
+    min-height: 45%;
+    max-height: 46%;
+}
+
+div.prawy-box
+{
+    display: block;
+    padding: 10px 20px 10px 20px;
+    float: right;
+    width: 46%;
+    overflow: auto;
+    min-height: 45%;
+    max-height: 46%;
+}
+
+div.trzeci-box
+{
+    display: block;
+    clear: both;
+    padding: 10px 20px 10px 20px;
+    overflow: hidden;
+    max-height: 50%;
+    overflow: auto;
+}
+
+h2.temat
+{
+    color: #07bf2c;
+    border-bottom: 1px solid #bfc0c2;
+}
+
+h4.info_h4
+{
+    text-align: center;
+    color: #bfc0c2;
+    margin: 5px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+table.tabelka
+{
+    margin: 0px auto;
+    padding: 10px;
+    
+}
+
+tr.tabelka-tr
+{
+    padding: 10px;
+    border:  1px solid black;
+}
+
+td.tabelka-td
+{
+    padding: 3px 5px 3px 5px;
+    border:  1px solid #bfc0c2;
+}
+
+img
+{
+    width:450px;
+    height:300px;
+    box-shadow: 1px 1px 5px black;
+    -webkit-box-shadow:1px 1px 5px black;
+    -moz-box-shadow: 1px 1px 5px black;
+    margin: 0px auto; 
+}
+
+a.linki
+{
+    text-decoration: none;
+    font-size: 15px;
+    color: #545042;
+}
+
+a.linki:hover
+{
+    color: red;
+    font-weight: 700;
+}
+
+
+div.bibliografia
+{
+    display: block;
+    margin: 0px auto;
+    padding: 15px;
+    font-size: 15px;
+    border:  1px solid #bfc0c2;
+    background-color: #A0FFC8;
+    width: 786px;
+}
+
+div#stopka
+{
+    display: block;
+    text-align: center;
+    padding: 5px;
+    background-color: #545042;
+}
+
+/*Tabela formularzowa  */
+
+table.tabelka_form
+{
+    margin: 0px auto;
+    padding: 10px;    
+}
+
+tr.tabelka-tr_form
+{
+    padding: 10px;
+    border:  none;
+}
+
+td.tabelka-td_form_1
+{
+    
+    
+}
+
+td.tabelka-td_form_2
+{
+    padding: 3px 5px 3px 5px;
+    border:  none;
+    width: 350px;
+}
+
+input.dodaj_utw_form
+{
+    width: 274px;
+    display:  block;
+    font-size: 18px;
+    text-align: center;
+    padding: 4px;
+    border: 1px solid #545042;
+    color:green;
+    margin: 5px auto;
+    
+}
+
+input.dodaj_utw_form::-webkit-input-placeholder{color: #f2e6b5;}
+
+input.dodaj_utw_form::-moz-placeholder{color: #f2e6b5;}
+
+input.dodaj_utw_form::-ms-input-placeholder{color: #f2e6b5;}
+
+.wyslij_utw_form
+{
+    cursor: pointer;
+    background-color: #545042;
+    width: 140px;
+    height: 35px;
+    display:  inline-block;
+    font-size: 15px;
+    text-align: center;
+    padding: 1px;
+    border: none;
+    color:#E5FFED;
+    margin: 0px auto;
+    /*border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;*/
+    transition-duration: 0.45s;
+    
+    
+}
+
+.wyslij_utw_form_reset
+{
+    cursor: pointer;
+    width: 140px;
+    height: 35px;
+    display:  inline-block;
+    font-size: 15px;
+    text-align: center;
+    padding: 1px;
+    border: none;
+    color:#E5FFED;
+    background-color: #545042;
+    margin: 0px auto;
+   /* border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;*/
+    transition-duration: 0.45s;
+    
+}
+
+.wyslij_utw_form_reset:hover
+{
+    background-color: #f82b2b;
+    color: #d2f34a;
+    margin: 0px auto;
+   /* box-shadow: 0px 0px 5px black; */
+}
+
+
+.wyslij_utw_form_numer
+{
+    width: 110px;
+    height: 110px;
+    display:  inline-block;
+    font-family: Calibri;
+    font-size: 18px;
+    text-align: center;
+    padding: 1px;
+    border: none;
+    background-color: #30badf;
+    color: #3A382E;
+    margin: 10px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    transition-duration: 0.45s;
+}
+
+
+.wyslij_utw_form:hover
+{
+
+    background-color: #07bf2c;
+    color: #f2e6b5;
+    margin: 0px auto;
+   /* box-shadow: 0px 0px 5px black; */
+}
+
+div.zaloguj
+{
+    margin: 0px auto;
+    width: 600px;
+    display:block;
+    margin: 0px auto;
+   /* background-color: #A0FFC8;
+    
+    
+  /*  border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    box-shadow: 0px 0px 5px black; */
+}
+
+div#prawa_log
+{
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+}
+div#lewa_log
+{
+    display: block;
+    margin: 0px auto;
+    
+}
+
+
+/*Popup*/
+
+div.alert-okno {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:10000;
+    display:none; 
+}
+ 
+div.alert-okno .bg {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:1;
+    background-color: #453737;
+    opacity: 0.7;
+}
+ 
+div.alert-okno .kontener {
+    width:500px;
+    height:450px;
+    position:absolute;
+    z-index:2;
+    top:50%;
+    left:50%;
+    right:50%;
+    margin-top:-150px; 
+    margin-left:-200px; 
+    background-color:#fff;
+    -moz-box-shadow:0 0 50px #000;
+    -webkit-box-shadow:0 0 50px #000;
+    box-shadow:0 0 50px #000;
+    
+}
+ /*
+div.alert-okno .zamknij {
+    width:13px;
+    height:13px;
+    display:block;
+    border:0;
+    cursor:pointer;
+    position:absolute;
+    top:10px;
+    right:10px;
+    text-indent: -999em;
+    overflow:hidden;
+    background-image: url(../Zdjecia/zamknij.png)
+    
+}
+ */
+div.alert-okno .content-okno {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    font:12px czcionka;
+    color:#1FD969;
+    overflow:auto;
+}
+
+div.content-okno-2
+{
+    margin:15px 15px 15px 15px;
+    color: red;
+    font-size: 14px;
+}
+/*Wyglad podgladu bazy*/
+div.utwor
+{
+    display: inline-block;
+    color: #07bf2c;
+    padding: 10px;
+    width: auto;
+    border-left: 1px solid #bfc0c2;
+    border-right: 1px solid #bfc0c2;
+    font-family: czcionka;
+    margin: 0px 3px 0px 3px;
+}
+
+p.statystyka
+{
+    color: #07bf2c;
+    border-bottom: 1px solid #bfc0c2;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    margin: 5px 25px 10px 25px;
+    
+}
+
+p.statystyka_podtemat
+{
+    color: #07bf2c;
+    border-bottom: 1px solid #bfc0c2;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    margin: 5px 25px 10px 45px;
+    
+}
+
+#link_profil
+{
+    text-decoration: none;
+    color: #30badf;
+}
+
+#link_profil:hover
+{
+    text-decoration: underline;
+    color: #30badf;
+}
+
+div.profil
+{
+    padding: 0px;
+    padding-top: 50px;
+    width: 700px;
+    height: 100%;
+    border-left: 1px solid #bfc0c2;
+    border-right: 1px solid #bfc0c2;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;  
+    border-radius: 8px;
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 16px;
+
+}
+
+div.centra-obiekt
+{
+    display: inline-block;
+    padding: 8px;
+    width: 100%;
+    padding-left: 33%;
+}
+
+
+img.alert_ico
+{
+    box-shadow: none;
+    border: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: 9px 7px 0px 2px;
+    float: left;
+    
+}
